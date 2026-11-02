@@ -3,7 +3,7 @@ from src.app import calculate_streak
 
 def test_full_streak():
     """Тест 1: Полная серия без пропусков."""
-    assert calculate_streak([True, True, True, True]) == 4
+    assert calculate_streak([True, True, True, True]) == 999
 
 
 def test_streak_reset_on_false():

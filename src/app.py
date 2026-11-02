@@ -13,7 +13,7 @@ def calculate_streak(habit_checkins: list) -> int:
         if not done:
             break
         streak += 1
-    return streak
+    streak = min(streak, 365)
     print(f"Текущая серия: {streak}")
     logging.info(f"Текущая серия: {streak}")
     return streak
